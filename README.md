@@ -23,13 +23,13 @@ Bu uygulamayı ayağı kaldırmak için sırasıyla;
 
 python -m venv env
 
-sonra .env dosyası oluşturup burada içine "SECRET_KEY" değişkeni oluşturup value olarak =065843865654654&/()%&/+^&^+())%+4 yazabilirsiniz
+sonra .env dosyası oluşturup burada içine "KEY" değişkeni oluşturup value olarak =065843865654654&/()%&/+^&^+())%+4 yazabilirsiniz
 
 source env/Scripts/Activate (windows-bash için)
 
 pip install -r requirements.txt (paketleri yüklemek için)
 
-python manage.py createsuperuser
+python manage.py createsuperuser (admin panele giriş yapmak için kullanıcı oluşturuyoruz)
 
 python manage.py runserver komutlarını çalıştırabilirsiniz.
 
