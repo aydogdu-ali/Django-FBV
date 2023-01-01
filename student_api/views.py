@@ -88,7 +88,7 @@ def student_api(request):
         if serializer.is_valid():
             serializer.save()
             data = {
-                "message": f"Student {serializer.validated_data.get('first_name')} saved successfully!"}
+                "message": f"Student {serializer.validated_data.get('first_name')} saved successfully!"} #validated_data(yüklenen dataları getir anlamındadır.)
             return Response(data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
